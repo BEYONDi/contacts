@@ -131,7 +131,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   faker
   jquery-rails
-  kaminari
+  kaminari (~> 0.16.1)
   populator
   rails (= 4.1.10)
   rspec-rails (~> 3.0)

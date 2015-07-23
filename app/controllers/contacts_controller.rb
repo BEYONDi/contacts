@@ -10,6 +10,7 @@ class ContactsController < ApplicationController
     # @contacts = Contact.all.page(params[:page])
 
     @contacts = Contact.order("id").page(params[:page])
+    # @contacts = Contact.page(params[:page]).per(10)
   end
 
   # GET /contacts/1
