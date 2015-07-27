@@ -4,14 +4,35 @@
 nav.pagination {
   margin-bottom: 4px;
   
-  span.page{
-  border: 1px solid grey;
-  // padding: 4px;
-  padding: 2px 2px 2px 0px;
-  margin-right: 2px;
-
+  span.page, span.next, span.last, span.first, span.prev{
+    border: 1px solid grey;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 6px;
+    margin-right: 2px;
     a{
-      margin-left: 6px;
+      text-decoration:none;
     }
   }
+
+  span.page:hover, span.page.current {
+    background: #bcbcbc;
+    color: #fff; 
+    border: none;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+
+    a{
+      background: #bcbcbc;
+    }
+  }
+
 }
