@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Contact do
   let(:contact) { create(:john) }
 
-  # it{ is_expected.to eq("John")}
-  # it{ is_expected.to have("Doe") }
-  # it{ is_expected.to have("john@example.com") }
+  it{ should allow_value("John").for(:first_name)}
+  it{ should allow_value("Doe").for(:last_name)}
+  it{ should allow_value("john@example.com").for(:email)}
 end
