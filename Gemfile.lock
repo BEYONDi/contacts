@@ -140,7 +140,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  factory_girl_rails
+  factory_girl_rails (~> 4.0)
   faker
   jquery-rails
   kaminari (~> 0.16.1)
